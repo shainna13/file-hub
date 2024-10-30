@@ -1,0 +1,6 @@
+[build]
+  command = "npx prisma generate && npm run build"
+  publish = ".next" # This should be the correct folder for Next.js SSR
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
